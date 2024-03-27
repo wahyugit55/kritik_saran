@@ -86,6 +86,11 @@ class KategoriKritikController extends Controller
         return response()->json(['message' => 'Kategori kritik berhasil dihapus']);
     }
 
+    public function index()
+    {
+        $kategoriKritiks = KategoriKritik::all();
+        return response()->json($kategoriKritiks);
+    }
 
 
 }
