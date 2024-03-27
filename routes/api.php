@@ -51,7 +51,7 @@ Route::prefix('kategori-kritik')->middleware('auth:sanctum')->group(function () 
     Route::get('/{id}', [KategoriKritikController::class, 'show']);
     Route::put('/{id}', [KategoriKritikController::class, 'update']);
     Route::delete('/{id}', [KategoriKritikController::class, 'destroy']);
-    Route::get('/kategori-kritik', [KategoriKritikController::class, 'index']);
+    Route::get('/', [KategoriKritikController::class, 'index']);
 });
 
 // Route untuk pengelolaan users
